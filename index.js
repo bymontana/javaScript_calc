@@ -22,7 +22,8 @@ function multiply(a, b) {
 }
 function divide(a, b) {
     if (b === 0) {
-        throw new Error("Cannot divide by zero");
+        console.log("Error: Division by zero is not allowed.");
+        return null; // Return null or throw an error}
     }
     const resultd = a / b;
     history.push(`${a} / ${b} = ${resultd}`);
@@ -47,4 +48,6 @@ divide(8, 2);
 printHistory();
 //
 // Uncomment the line below to test division by zero
-divide(5, 0); This will throw an error
+divide(5, 0); //This will throw an error
+printHistory(); // Print the history of calculations
+//
