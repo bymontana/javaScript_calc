@@ -4,20 +4,25 @@
 // History array to store calculations
 let history = [];
 
+// Function to add a calculation string to the history
+function storeHistory(calculation) {
+    history.push(calculation);
+}
+
 // Create functions for each operation and store results in history
 function add(a, b) {
     const resulta = a + b;
-    history.push(`${a} + ${b} = ${resulta}`);
+    storeHistory(`${a} + ${b} = ${resulta}`);
     return resulta;
 }
 function subtract(a, b) {
     const resultb = a - b;
-    history.push(`${a} - ${b} = ${resultb}`);
+    storeHistory(`${a} - ${b} = ${resultb}`);
     return resultb;
 }
 function multiply(a, b) {
     const resultc = a * b;
-    history.push(`${a} * ${b} = ${resultc}`);
+    storeHistory(`${a} * ${b} = ${resultc}`);
     return resultc;
 }
 function divide(a, b) {
@@ -26,7 +31,7 @@ function divide(a, b) {
         return null; // Return null or throw an error}
     }
     const resultd = a / b;
-    history.push(`${a} / ${b} = ${resultd}`);
+    storeHistory(`${a} / ${b} = ${resultd}`);
     return resultd;
 }
 
