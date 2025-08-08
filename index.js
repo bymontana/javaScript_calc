@@ -38,3 +38,13 @@ function printHistory() {
         history.forEach(entry => console.log(entry));
     }
 }
+
+// Test the calculator functions
+add(5, 3);
+subtract(10, 4);
+multiply(2, 6);
+divide(8, 2);
+printHistory();
+//
+// Uncomment the line below to test division by zero
+divide(5, 0); This will throw an error
